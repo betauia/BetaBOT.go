@@ -11,7 +11,7 @@ var DB *sql.DB
 
 func InitDatabase() {
 	var err error
-	DB, err = sql.Open("sqlite3", "./db/beta-scheduled_messages.db")
+	DB, err = sql.Open("sqlite3", "./db/betabot.db")
 	if err != nil {
 		log.Fatalf("Failed to open database: %v", err)
 	}
